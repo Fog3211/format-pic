@@ -11,16 +11,35 @@
 </head>
 
 <body>
-    <input type="file" id="inputImg" multiple="multiple">
-    <select id="typeSelect">
-        <option value="1">webp格式</option>
-        <option value="2">jpg格式</option>
-        <option value="3">png格式</option>
-    </select>
-    <img id="imgSelect" src="" alt="">
-    <button id="start">开始转换</button>
-    <p>预览：</p>
-    <img id="imgShow" src="" alt="">
+    <div class="title">
+        <h2>图片格式在线转换(支持webp, jpg/jpeg, png)</h2>
+    </div>
+    <ul class="main">
+        <li>
+            <input type="file" id="inputImg">
+        </li>
+        <li id="imgUp" style="display:none;">
+            <img id="imgSelect" src="" alt="">
+        </li>
+        <li class="typeSelect">
+            <span class="type-info">请选择格式 :</span>
+            <select id="typeSelect">
+                <option value="1">webp格式</option>
+                <option value="2">jpeg格式</option>
+                <option value="3">png格式</option>
+            </select>
+        </li>
+        <li>
+            <button id="start">开始转换</button>
+        </li>
+        <li>
+            <p>预览 :</p>
+            <img id="imgShow" src="" alt="" style="display:none;">
+        </li>
+        <li>
+            <a href="javascript:;" id="download" download="下载">点击下载</a>
+        </li>
+    </ul>
     <script src="./script.js"></script>
 </body>
 
